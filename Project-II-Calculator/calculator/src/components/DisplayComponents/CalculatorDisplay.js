@@ -2,12 +2,13 @@ import React from 'react';
 import './Display.css';
 
 import ClearButton from "../ButtonComponents/ActionButton"
-import OperatorButton from "../ButtonComponents/Operators"
+import OperatorButton from "../ButtonComponents/Operators.js"
+import NumberButtons from "../ButtonComponents/NumberButton"
 
 function CalculatorContainer() {
     return(
         <div className="container">
-            <ReadoutDisplay />
+            <ReadoutDisplay numberProp={0} />
             <ButtonContainer />
         </div>
 
@@ -16,17 +17,22 @@ function CalculatorContainer() {
 
 export default CalculatorContainer;
 
-function ReadoutDisplay() {
+function ReadoutDisplay(props) {
     return(
-        <div className="readout">0</div>
+        <div className="readout">{props.numberProp}</div>
     );
 }
 
-function ButtonContainer() {
+function ButtonContainer(props) {
     return(
-        <div>
-            <ClearButton />
-            <OperatorButton />
+        <div className="button-container">
+            <div className="left-buttons">
+                <ClearButton clearText={"clear"} />
+                <NumberButtons />
+            </div>
+            <div className="right-buttons">
+                <OperatorButton />
+            </div>
         </div>
     );
 }

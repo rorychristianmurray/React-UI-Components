@@ -1,12 +1,12 @@
 .container {
-    border: 1px solid red;
+    border: 1px solid grey;
     max-width: 500px;
 
 
 }
 
 .readout {
-    background: #4d4d4d;
+    background: #55596d;
     color: white;
     text-align: right;
     vertical-align: middle;
