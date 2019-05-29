@@ -1,0 +1,45 @@
+.button-container {
+    display: flex;
+}
+
+.clear-button {
+    font-size: 3.5rem;
+    text-align: center;
+    height: 20%;
+}
+
+.operator-box {
+    background: #bb1333;
+}
+
+.operator-button {
+    text-align: center;
+    font-size: 4rem;
+    color: white;
+    border: 1px solid grey;
+}
+
+.left-buttons {
+    width: 75%; 
+}
+
+.right-buttons {
+    width: 25%; 
+}
+
+.number {
+    border: 1px solid grey;
+    width: 100%;
+    height: 74px;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.number-buttons {
+    display: flex;
+}
+
+.number-pad {
+    display: flex;
+    flex-direction: column;
+}
